@@ -1,9 +1,24 @@
 # PRECIA Dev test
 ## Preguntas a responder
+### 1. El fichero https://aprendeconaIf.es/docencia/python/ejercicios/soluciones/pandas/titanic.csv contiene información sobre los pasajeros del Titanic. Escribir un programa con los siguientes requisitos:
+
+- Generar un DataFrame con los datos del fichero.
+- Mostrar por pantalla las dimensiones del DataFrame, el número de datos que contiene, los nombres de sus columnas y filas, los tipos de datos de las columnas, las 10 primeras filas y las 1 0 últimas filas
+- Mostrar por pantalla los datos del pasajero con identificador 148.
+- Mostrar por pantalla las filas pares del DataFrame.
+- Mostrar por pantalla los nombres de las personas que iban en primera clase ordenadas alfabéticamente.
+- Mostrar por pantalla el porcentaje de personas que sobrevivieron y murieron.
+- Mostrar por pantalla el porcentaje de personas que sobrevivieron en cada clase.
+- Eliminar del DataFrame los pasajeros con edad desconocida.
+- Mostrar por pantalla la edad media de las mujeres que viajaban en cada clase.
+- Añadir una nueva columna booleana para ver si el pasajero era menor de edad o no.
+- Mostrar por pantalla el porcentaje de menores y mayores de edad que sobrevivieron en cada clase.
+
+#### Codigo en Preciatest.py
+
 ###  2.	¿Cuáles son las diferencias entre los tipos de datos CHAR y VARCHAR? *
 - CHAR: cadenas de longitud fija. Si la cadena es más corta que la longitud especificada, se completa con espacios en blanco.
 - VARCHAR:  Almacena cadenas de longitud variable. Ocupa solo el espacio necesario para almacenar la cadena, sin espacios en blanco adicionales.
-
 
 ### 3.	¿Cuál es mejor tipo para almacenar un precio? *
 - El más adecuado para almacenar precios es generalmente el tipo de dato `DECIMAL` o `NUMERIC`. son mas precisos y se utilizan para valores que requieren exactitud decimal, como los precios.
@@ -14,11 +29,8 @@
 
      `INSERT INTO us_bussines_days (valuation_date) VALUES ('2022-02-20');`
 
-
-
 ###  5.	¿Cuál puede ser la posible causa del siguiente mensaje de error: `“ERROR 1062 (23000): Duplicate entry 'EURUSD' for key 'PRIMARY"‘?`
 - Este mensaje puede indicar que está intentando insertar o actualizar un registro en el que el valor de la columna que tiene la restricción de clave primaria ('PRIMARY') ya existe en otra fila. En este caso, 'EURUSD' está duplicado en la columna clave primaria. Puede deberse a intentos de insertar un valor que ya existe en la tabla o a problemas de sincronización en la base de datos. Para poder resolverlo, se puede eliminar o corregir los duplicados que ya esten.
-
 
 ### 6.	Defina en sus palabras que es una AWS lambda 
    - AWS Lambda es un servicio que permite ejecutar codigo en respuesta a eventos sin necesidad de aprovisionar o gestionar servidores. a esto se llama arquitectura serverless
